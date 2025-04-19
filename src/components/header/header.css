@@ -1,0 +1,95 @@
+.header {
+    height: 34vw; /* from second version for responsiveness */
+    width: 100%;
+    margin: 30px auto;
+    background: url('./header_img.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* 30px from second version */
+
+    animation: slideBackground 12s infinite; /* from first version */
+}
+
+@keyframes slideBackground {
+    0% { background: url('./header_img2.png') no-repeat center center / cover; }
+    33% { background: url('./header_img.png') no-repeat center center / cover; }
+    66% { background: url('./header_img3.png') no-repeat center center / cover; }
+    100% { background: url('./header_img4.png') no-repeat center center / cover; }
+} 
+
+.header-contents {
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 10%; /* from second version */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vw;
+    transform: translateX(-50%);
+    animation: fadeIn 3.5s;
+} 
+
+.header-contents h2 {
+    font-size: max(4.6vw, 20px);
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.header-contents p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+     margin-top: -40px;
+}
+
+.header-contents button {
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    border: none;
+}
+
+.header-contents button:hover {
+    background-color: lightgray;
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 45%;
+    }
+}
+@media (max-width: 500px) {
+    .header-contents {
+        max-width: 45%;
+    }
+     button{
+        display: none;
+    }
+    .header-contents h2{
+        font-size: px;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .header-contents {
+        max-width: 65%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw; /* fixed syntax: added space between values */
+    }
+}
+

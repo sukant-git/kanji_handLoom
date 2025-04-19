@@ -1,0 +1,126 @@
+/* ==== IMAGE STYLES ==== */
+.thari img,
+.atithu img,
+.nada img,
+.rati img,
+.bond img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.material h1{
+    margin-bottom: 10px;
+    
+    
+}
+.material {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* ==== HOVER EFFECT ==== */
+.thari img:hover,
+.atithu img:hover,
+.nada img:hover,
+.rati img:hover,
+.bond img:hover {
+  transform: scale(0.95); 
+  box-shadow: 0 0 15px rgba(8, 98, 207, 0.6); /* Glow effect */
+}
+
+/* ==== SECTION LAYOUT ==== */
+.thari,
+.nada,
+.bond {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.atithu,
+.rati {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* ==== RESPONSIVE @ 780px ==== */
+@media (max-width: 780px) {
+  .thari img,
+  .atithu img,
+  .nada img,
+  .rati img,
+  .bond img {
+    width: 70%;
+    height: auto;
+  }
+
+  .thari,
+  .atithu,
+  .nada,
+  .rati,
+  .bond {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+/* ==== RESPONSIVE @ 500px ==== */
+@media (max-width: 500px) {
+  .thari img,
+  .atithu img,
+  .nada img,
+  .rati img,
+  .bond img {
+    width: 50%;
+    height: auto;
+  }
+
+  .thari,
+  .atithu,
+  .nada,
+  .rati,
+  .bond {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+/* ==== HR STYLE ==== */
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
