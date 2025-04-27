@@ -31,8 +31,8 @@ function App() {
          <Route path='/machinery' element={<HandlooMachine/>} />
        
     </Routes>
-      </div>
       <Aboutus/>
+      </div>
     </>
   )
 }
